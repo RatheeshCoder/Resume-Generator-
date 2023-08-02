@@ -1,0 +1,63 @@
+/* Resume.css */
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .resume-section {
+    margin-bottom: 30px;
+  }
+  
+  .resume-section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .resume-list {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .resume-list li {
+    margin-bottom: 5px;
+  }
+  
+  .resume-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Additional styles for the layout */
+  .resume-container {
+    grid-template-areas:
+      'personal-info education'
+      'experience skills'
+      'certificates certificates';
+  }
+  
+  .resume-section:nth-child(1) {
+    grid-area: personal-info;
+  }
+  
+  .resume-section:nth-child(2) {
+    grid-area: education;
+  }
+  
+  .resume-section:nth-child(3) {
+    grid-area: experience;
+  }
+  
+  .resume-section:nth-child(4) {
+    grid-area: skills;
+  }
+  
+  .resume-section:nth-child(5) {
+    grid-area: certificates;
+  }
+  
